@@ -13,7 +13,7 @@ This project provides a simple and efficient solution for sending Docker contain
 
 ### FileBeat container not starting
 
-If the Filebeat container fails to start, it could be due to insufficient file permissions for the filebeat.yml configuration file. In this case, you might need to modify the file permissions using the following `chmod` command:
+If the Filebeat container fails to start, it could be due to insufficient file permissions for the filebeat.yml configuration file. In this case, you might need to modify the file permissions. First navigate to the directory of the project containing the *config* folder and then  execute following `chmod` command:
 
 ```
 chmod go-w ./config/filebeat.yml
